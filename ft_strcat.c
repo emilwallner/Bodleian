@@ -6,7 +6,7 @@
 /*   By: ewallner <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/04 21:42:19 by ewallner          #+#    #+#             */
-/*   Updated: 2016/11/08 18:08:03 by ewallner         ###   ########.fr       */
+/*   Updated: 2016/11/08 18:44:27 by ewallner         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,13 +15,16 @@
 
 char *ft_strcat(char *dest, const char *src)
 {
-	char	*src2;	
-	size_t		i;
-
+	size_t			i;
+	unsigned int	len;
+	
 	i = 0;
-	src2 = ft_strnew(ft_strlen(src));
-	if (src2 == NULL)
-		return (NULL);
-	i = ft_strlen(dest);
-	*dest[i + 1] = src2;
+	len = ft_strlen(dest);
+	while (src[i] != '\0')
+	{
+		dest[i + len] = src[i];
+		i++;
+	}
+	dest[i + len] = '\0';
+	return (dest);
 }

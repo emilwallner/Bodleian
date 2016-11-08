@@ -6,7 +6,7 @@
 /*   By: ewallner <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/04 20:13:07 by ewallner          #+#    #+#             */
-/*   Updated: 2016/11/08 16:42:28 by ewallner         ###   ########.fr       */
+/*   Updated: 2016/11/08 20:17:28 by ewallner         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,6 +42,8 @@ int		ft_memcmp(void const *str1, void const *str2, size_t n);
 void	*ft_memmove(void *dest, const void *src, size_t n);
 void	*ft_memcpy(void *dest, void const *src, size_t n);
 char	*ft_strcpy(char *dest, const char *src);
+char	*ft_strcat(char *dest, const char *src);
+char	*ft_strncat(char *dest, const char *src, size_t n);
 void	*ft_memccpy(void *dest, void const *src, int c, size_t n);
 char	*ft_strdup(const char *s);
 char	*ft_strncpy(char *dest, const char *src, size_t len);

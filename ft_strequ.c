@@ -1,23 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strnequ.c                                       :+:      :+:    :+:   */
+/*   ft_strequ.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ewallner <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2016/11/09 20:35:17 by ewallner          #+#    #+#             */
-/*   Updated: 2016/11/09 20:39:12 by ewallner         ###   ########.fr       */
+/*   Created: 2016/11/09 19:46:35 by ewallner          #+#    #+#             */
+/*   Updated: 2016/11/09 20:33:46 by ewallner         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
-
-int		ft_strnequ(char const *s1, char const *s2, size_t n)
+int		ft_strequ(char const *s1, char const *s2)
 {
-	size_t		i;
-
-	i = 0;
-	while(*s1++ && *s2++ && i < n)
+	while(*s1++ && *s2++)
 	{
 		if (*s1 != *s2)
 			return (0);

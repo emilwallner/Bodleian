@@ -6,8 +6,16 @@
 /*   By: ewallner <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/05 14:39:31 by ewallner          #+#    #+#             */
-/*   Updated: 2016/11/05 14:39:51 by ewallner         ###   ########.fr       */
+/*   Updated: 2016/11/09 19:03:39 by ewallner         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <string.h>
+
 void	ft_striter(char *s, void (*f)(char*))
+{
+	while (*s && s != NULL)
+	{
+		f(s++);
+	}
+}

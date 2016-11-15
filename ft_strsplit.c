@@ -6,7 +6,7 @@
 /*   By: ewallner <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/05 15:47:45 by ewallner          #+#    #+#             */
-/*   Updated: 2016/11/14 20:17:07 by ewallner         ###   ########.fr       */
+/*   Updated: 2016/11/15 14:01:08 by ewallner         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -78,6 +78,8 @@ int				w;
    char			**list;
 
    list = (char**)malloc(sizeof(*list) * ft_cntwrd(s, c) + 1);
+	if(list == NULL)
+		return (NULL);
    f = 0;
    w = 0;
    while (w < ft_cntwrd(s, c))
@@ -105,10 +107,10 @@ int				w;
 }
 
 
-int		main(void)
+/*int		main(void)
 {
 	//char s[] = "delete**hello****bob***this*is*the*world*****out*there";
 
 	ft_strsplit("0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0", ' ');
 	return (0);
-}
+}*/

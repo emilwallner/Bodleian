@@ -6,7 +6,7 @@
 /*   By: ewallner <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/04 20:13:07 by ewallner          #+#    #+#             */
-/*   Updated: 2016/11/10 15:50:23 by ewallner         ###   ########.fr       */
+/*   Updated: 2016/11/15 12:08:46 by ewallner         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,6 +31,7 @@ int		ft_isprint(int n);
 int		ft_isascii(int n);
 int		ft_toupper(int n);
 int		ft_lolower(int n);
+char	*ft_itoa(int n);
 int		ft_atoi(char const *s);
 void	*ft_memset(void *s, int c, size_t n);
 void	*ft_bzero(void *s, size_t n);

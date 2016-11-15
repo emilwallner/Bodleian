@@ -6,14 +6,14 @@
 /*   By: ewallner <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/05 14:31:51 by ewallner          #+#    #+#             */
-/*   Updated: 2016/11/09 15:46:54 by ewallner         ###   ########.fr       */
+/*   Updated: 2016/11/15 17:30:55 by ewallner         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
 #include <string.h>
 
-void	ft_strdel(char**as)
+void	ft_strdel(char **as)
 {
 	free(*as);
 	*as = NULL;

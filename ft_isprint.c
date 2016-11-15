@@ -6,15 +6,14 @@
 /*   By: ewallner <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/04 23:08:11 by ewallner          #+#    #+#             */
-/*   Updated: 2016/11/07 15:41:58 by ewallner         ###   ########.fr       */
+/*   Updated: 2016/11/15 17:09:33 by ewallner         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_isprint(int c)
+int		ft_isprint(int c)
 {
 	if (c >= ' ' && c <= '~')
 		return (1);
 	else
 		return (0);
 }
-

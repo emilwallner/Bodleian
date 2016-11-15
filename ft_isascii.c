@@ -6,11 +6,11 @@
 /*   By: ewallner <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/04 23:07:39 by ewallner          #+#    #+#             */
-/*   Updated: 2016/11/07 15:59:07 by ewallner         ###   ########.fr       */
+/*   Updated: 2016/11/15 17:01:26 by ewallner         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_isascii(int c)
+int		ft_isascii(int c)
 {
 	if (c >= 0 && c <= 127)
 		return (1);

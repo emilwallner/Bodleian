@@ -6,18 +6,18 @@
 /*   By: ewallner <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/04 21:42:19 by ewallner          #+#    #+#             */
-/*   Updated: 2016/11/08 18:44:27 by ewallner         ###   ########.fr       */
+/*   Updated: 2016/11/15 17:29:59 by ewallner         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <string.h>
 #include "libft.h"
 
-char *ft_strcat(char *dest, const char *src)
+char	*ft_strcat(char *dest, const char *src)
 {
 	size_t			i;
 	unsigned int	len;
-	
+
 	i = 0;
 	len = ft_strlen(dest);
 	while (src[i] != '\0')

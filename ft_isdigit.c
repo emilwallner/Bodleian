@@ -6,11 +6,11 @@
 /*   By: ewallner <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/04 23:05:46 by ewallner          #+#    #+#             */
-/*   Updated: 2016/11/07 15:33:26 by ewallner         ###   ########.fr       */
+/*   Updated: 2016/11/15 17:01:56 by ewallner         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_isdigit(int c)
+int		ft_isdigit(int c)
 {
 	if (c >= '0' && c <= '9')
 		return (1);

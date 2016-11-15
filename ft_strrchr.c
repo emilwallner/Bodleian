@@ -6,7 +6,7 @@
 /*   By: ewallner <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/08 22:14:30 by ewallner          #+#    #+#             */
-/*   Updated: 2016/11/08 22:16:19 by ewallner         ###   ########.fr       */
+/*   Updated: 2016/11/15 17:45:29 by ewallner         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ char	*ft_strrchr(const char *src, int c)
 	}
 	while (src != src1)
 	{
-		if (*src ==	 c)
+		if (*src == c)
 			return ((char*)src);
 		src--;
 	}

@@ -6,21 +6,21 @@
 /*   By: ewallner <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/04 22:57:24 by ewallner          #+#    #+#             */
-/*   Updated: 2016/11/09 11:20:30 by ewallner         ###   ########.fr       */
+/*   Updated: 2016/11/15 17:46:16 by ewallner         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <string.h>
 #include "libft.h"
 
-char *ft_strstr(const char *haystack, const char *needle)
+char	*ft_strstr(const char *haystack, const char *needle)
 {
 	int i;
 	int j;
 
 	i = 0;
 	if (*needle == '\0')
-			return ((char*)haystack);
+		return ((char*)haystack);
 	while (haystack[i] != '\0')
 	{
 		j = 0;

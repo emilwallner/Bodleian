@@ -6,13 +6,13 @@
 /*   By: ewallner <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/07 23:09:40 by ewallner          #+#    #+#             */
-/*   Updated: 2016/11/07 23:38:52 by ewallner         ###   ########.fr       */
+/*   Updated: 2016/11/15 17:31:13 by ewallner         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char *ft_strcpy(char *dest, const char *src)
+char	*ft_strcpy(char *dest, const char *src)
 {
 	size_t		i;
 

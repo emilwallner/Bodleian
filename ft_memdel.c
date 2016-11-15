@@ -6,13 +6,13 @@
 /*   By: ewallner <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/05 14:23:15 by ewallner          #+#    #+#             */
-/*   Updated: 2016/11/07 23:06:16 by ewallner         ###   ########.fr       */
+/*   Updated: 2016/11/15 17:14:22 by ewallner         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
 
-void	ft_memdel(void	**ap)
+void	ft_memdel(void **ap)
 {
 	free(*ap);
 	*ap = NULL;

@@ -6,7 +6,7 @@
 /*   By: ewallner <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/08 12:20:18 by ewallner          #+#    #+#             */
-/*   Updated: 2016/11/08 14:57:17 by ewallner         ###   ########.fr       */
+/*   Updated: 2016/11/15 17:22:35 by ewallner         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,7 @@
 void	*ft_memmove(void *dest, const void *src, size_t len)
 {
 	void	*tmp;
+
 	tmp = ft_strnew(len);
 	if (tmp)
 	{
@@ -24,5 +25,4 @@ void	*ft_memmove(void *dest, const void *src, size_t len)
 		free(tmp);
 	}
 	return (dest);
-
 }

@@ -6,7 +6,7 @@
 /*   By: ewallner <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/05 15:07:56 by ewallner          #+#    #+#             */
-/*   Updated: 2016/11/09 19:36:14 by ewallner         ###   ########.fr       */
+/*   Updated: 2016/11/15 17:37:40 by ewallner         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@
 char	*ft_strmap(char const *s, char (*f)(char))
 {
 	unsigned int	i;
-	char	*dest;
+	char			*dest;
 
 	i = 0;
 	dest = (char*)malloc(sizeof(*s) * ft_strlen(s) + 1);

@@ -6,14 +6,13 @@
 /*   By: ewallner <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/04 20:13:07 by ewallner          #+#    #+#             */
-/*   Updated: 2016/11/15 14:28:52 by ewallner         ###   ########.fr       */
+/*   Updated: 2016/11/15 18:19:23 by ewallner         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
-
-#include <string.h>
+# include <string.h>
 
 void	ft_putchar_fd(char c, int fd);
 void	ft_putstr_fd(char const *s, int fd);
@@ -51,7 +50,7 @@ void	ft_strclr(char *s);
 void	*ft_memccpy(void *dest, void const *src, int c, size_t n);
 char	*ft_strdup(const char *s);
 char	*ft_strncpy(char *dest, const char *src, size_t len);
-int		ft_strcmp(const char *s1,const char *s2);
+int		ft_strcmp(const char *s1, const char *s2);
 int		ft_strncmp(const char *s1, const char *s2, size_t n);
 char	*ft_strchr(const char *str, int c);
 char	*ft_strrchr(const char *str, int c);
@@ -67,25 +66,4 @@ char	*ft_strsub(char const *s, unsigned int start, size_t len);
 char	*ft_strjoin(char const *s1, char const *s2);
 char	*ft_strtrim(char const *s);
 char	**ft_strsplit(char const *s, char c);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 #endif
-

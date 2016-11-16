@@ -6,12 +6,11 @@
 /*   By: ewallner <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/05 15:47:45 by ewallner          #+#    #+#             */
-/*   Updated: 2016/11/16 14:50:49 by ewallner         ###   ########.fr       */
+/*   Updated: 2016/11/16 15:11:49 by ewallner         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
-#include <stdio.h>
 #include "libft.h"
 
 static int	ft_cntwrd(char const *s, char c)

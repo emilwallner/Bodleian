@@ -6,12 +6,11 @@
 /*   By: ewallner <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/05 16:16:42 by ewallner          #+#    #+#             */
-/*   Updated: 2016/11/15 17:28:23 by ewallner         ###   ########.fr       */
+/*   Updated: 2016/11/16 15:14:04 by ewallner         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
 
 void	ft_putnbr_fd(int n, int fd)
 {

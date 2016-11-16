@@ -6,12 +6,11 @@
 /*   By: ewallner <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/08 09:10:22 by ewallner          #+#    #+#             */
-/*   Updated: 2016/11/16 09:14:36 by ewallner         ###   ########.fr       */
+/*   Updated: 2016/11/16 15:17:14 by ewallner         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
 
 int		ft_strncmp(const char *s1, const char *s2, size_t n)
 {

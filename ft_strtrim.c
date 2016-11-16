@@ -6,37 +6,25 @@
 /*   By: ewallner <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/05 15:46:21 by ewallner          #+#    #+#             */
-/*   Updated: 2016/11/15 17:50:07 by ewallner         ###   ########.fr       */
+/*   Updated: 2016/11/16 14:50:09 by ewallner         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
 #include <stdlib.h>
 #include "libft.h"
 
 char	*ft_strtrim(char const *s)
 {
-	unsigned int	i;
-	unsigned int	len;
-	char			*dest;
+	char const *s_back;
 
-	if (*s == '\0' || s == NULL)
-		return ((char *)s);
-	while ((*s == ' ' || *s == '\n' || *s == '\t') && *s)
-		s++;
-	len = ft_strlen(s);
-	if (len == 0)
-		return ((char*)s);
-	i = len - 1;
-	while ((s[i] == ' ' || s[i] == '\n' || s[i] == '\t') && i > 0)
-	{
-		len--;
-		i--;
-	}
-	dest = (char*)malloc(sizeof(*s) * len + 1);
-	if (dest == NULL)
+	if (s == NULL)
 		return (NULL);
-	ft_strncpy(dest, s, len);
-	dest[len] = '\0';
-	return (dest);
+	while (*s == ' ' || *s == '\t' || *s == '\n')
+		s++;
+	if (*s == '\0')
+		return (ft_strnew(0));
+	s_back = s + ft_strlen(s) - 1;
+	while (*s_back == ' ' || *s_back == '\t' || *s_back == '\n')
+		s_back--;
+	return (ft_strsub(s, 0, s_back - s + 1));
 }
